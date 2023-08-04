@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste Hosting</title>
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body onload="start();">
+    <main class="main-content">
+      <h1 class="mc-font">Namaste Hosting</h1>
+      <p style="text-align: center">Hosting Prices</p>
+
+      <section class="two-cols">
+        <div>
+          <h2 class="mc-font">Slider Unit</h2>
+          <p>RAM: 1 = 1 GB</p>
+          <p>CPU: 1 = 100%</p>
+          <p>Storage:1 = 1GB</p>
+
+          <hr class="sml-line" />
+
+          <h2 class="mc-font">Slider Rate</h2>
+
+          <p>RAM: Rs <span id="ramPrice"></span> Per GB</p>
+          <p>CPU: Rs <span id="cpuPrice"></span> per 100%</p>
+          <p>Storage: Rs <span id="storagePrice"></span> per 1 GB</p>
+        </div>
+        <div>
+          <div class="slider-grid">
+            <div class="slider">
+              <p class="name">RAM</p>
+              <div class="slider">
+                <input
+                  type="range"
+                  min="1"
+                  max="10"
+                  value="4"
+                  class="slider-input"
+                  id="slider1"
+                />
+              </div>
+              <p class="value" id="value1">1</p>
+            </div>
+
+            <div class="slider">
+              <p class="name">CPU</p>
+              <div class="slider">
+                <input
+                  type="range"
+                  min="1"
+                  max="5"
+                  value="2"
+                  class="slider-input"
+                  id="slider2"
+                />
+              </div>
+              <p class="value" id="value2">2</p>
+            </div>
+
+            <div class="slider">
+              <p class="name">Storage</p>
+              <div class="slider">
+                <input
+                  type="range"
+                  min="1"
+                  max="50"
+                  value="10"
+                  class="slider-input"
+                  id="slider3"
+                />
+              </div>
+              <p class="value" id="value3">10</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h3 class="total">Total Cost: <span id="total"></span></h3>
+
+     <div class="btn-container">
+		  <a href="https://discord.gg/kZNHMSFm"><button class="btn">Buy Now!</button></a>
+		</div>
+    </main>
+  </body>
+</html>
