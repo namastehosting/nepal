@@ -1,6 +1,6 @@
-var ramRate = 70;
-var cpuRate = 100;
-var storageRate = 10;
+var ramRate = 90;
+var cpuRate = 120;
+var storageRate = 25;
 
 // -----------------------------------------
 
